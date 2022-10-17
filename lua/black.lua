@@ -7,7 +7,7 @@ local black = {
     graya    = '#aaaaaa';
     white    = '#d6deeb';
     bright   = '#eeeeee';
-    bgblue   = '#000000';
+    black   = '#000000';
     neardark = '#112630';
     purple   = '#c792ea';
     green    = '#c5e478';
@@ -30,7 +30,7 @@ local black = {
   }
 
   function black.terminal_color()
-    vim.g.terminal_color_0  = black.bgblue
+    vim.g.terminal_color_0  = black.black
     vim.g.terminal_color_1  = black.red
     vim.g.terminal_color_2  = black.green
     vim.g.terminal_color_3  = black.yellow2
@@ -59,34 +59,34 @@ local black = {
 
   function black.load_syntax()
     local syntax = {
-      Normal                               = {fg=black.white,bg=black.bgblue};
+      Normal                               = {fg=black.white,bg=black.black};
       Terminal                             = {fg = black.white,bg=black.darkblue};
-      LineNr                               = {fg=black.gray4,   bg=black.bgblue};
+      LineNr                               = {fg=black.gray4,   bg=black.black};
       CursorLine                           = {bg=black.neardark};
       CursorLineNr                         = {fg=black.graya,   bg=black.neardark};
       ColorColumn                          = {bg=black.gray2};
       Directory                            = {fg=black.blue};
-      DiffAdd                              = {fg=black.bgblue,  bg=black.green};
-      DiffChange                           = {fg=black.bgblue,  bg=black.yellow};
-      DiffDelete                           = {fg=black.bgblue,  bg=black.red };
-      DiffText                             = {fg=black.bgblue,  bg=black.green};
+      DiffAdd                              = {fg=black.black,  bg=black.green};
+      DiffChange                           = {fg=black.black,  bg=black.yellow};
+      DiffDelete                           = {fg=black.black,  bg=black.red };
+      DiffText                             = {fg=black.black,  bg=black.green};
       diffAdded                            = {fg=black.green};
       diffRemoved                          = {fg=black.red};
       VertSplit                            = {fg=black.gray7};
-      Folded                               = {fg=black.gray7,   bg=black.bgblue};
-      FoldColumn                           = {fg=black.gray3,   bg=black.bgblue};
-      SignColumn                           = {fg=black.none,    bg=black.bgblue};
+      Folded                               = {fg=black.gray7,   bg=black.black};
+      FoldColumn                           = {fg=black.gray3,   bg=black.black};
+      SignColumn                           = {fg=black.none,    bg=black.black};
       IncSearch                            = {fg=black.bright,  bg=black.yellow};
       NonText                              = {fg=black.gray4};
       PMenu                                = {bg=black.purple2};
       PMenuSel                             = {bg=black.purple};
-      Search                               = {fg=black.bgblue,  bg=black.yellow};
+      Search                               = {fg=black.black,  bg=black.yellow};
       SpecialKey                           = {fg=black.yellow};
       StatusLine                           = {fg=black.bright,  bg=black.neardark};
       StatusLineNC                         = {fg=black.gray7,   bg=black.neardark};
       Title                                = {fg=black.blue};
       Visual                               = {fg=black.white,   bg=black.purple2};
-      EndOfBuffer                          = {fg=black.gray4,   bg=black.bgblue };
+      EndOfBuffer                          = {fg=black.gray4,   bg=black.black };
       Comment                              = {fg=black.gray,    style='italic'};
       Constant                             = {fg=black.green};
       String                               = {fg=black.yellow};
@@ -168,14 +168,14 @@ local black = {
       mkdCodeStart                         = {fg=black.white};
       mkdCodeEnd                           = {fg=black.white};
       mkdLinkDef                           = {fg=black.green2};
-      mkdCodeDelimiter                     = {fg=black.gray,    bg=black.bgblue};
+      mkdCodeDelimiter                     = {fg=black.gray,    bg=black.black};
       htmlH1                               = {fg=black.blue,    style='bold'};
       htmlH2                               = {fg=black.blue,    style='bold'};
       htmlH3                               = {fg=black.blue,    style='bold'};
       htmlH4                               = {fg=black.blue};
       htmlH5                               = {fg=black.blue};
-      htmlBold                             = {fg=black.purple,  bg=black.bgblue  ,style='bold'};
-      shComment                            = {fg=black.gray,    bg=black.bgblue  ,style='italic'};
+      htmlBold                             = {fg=black.purple,  bg=black.black  ,style='bold'};
+      shComment                            = {fg=black.gray,    bg=black.black  ,style='italic'};
       NERDTreeDir                          = {fg=black.hoki};
       NERDTreeOpenable                     = {fg=black.red};
       NERDTreeClosable                     = {fg=black.yellow};
