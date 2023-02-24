@@ -62,6 +62,7 @@ local black = {
       Normal                               = {fg=black.white,bg=black.black};
       Terminal                             = {fg = black.white,bg=black.darkblue};
       LineNr                               = {fg=black.gray4,   bg=black.black};
+      Cursor                               = {fg=black.hint_fg, bg=black.neardark};
       CursorLine                           = {bg=black.neardark};
       CursorLineNr                         = {fg=black.graya,   bg=black.neardark};
       ColorColumn                          = {bg=black.gray2};
